@@ -1,32 +1,53 @@
-@prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#>.
+@prefix : <#>.
 @prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
 
-tdh:Person a rdf:Class;
+:Person a rdf:Class;
   rdfs:label "Person"@en;
   rdfs:comment "The Person class represents people"@en.
 
-tdh:Student a rdf:Class;
+:Student a rdf:Class;
   rdfs:label "Student"@en;
   rdfs:comment "A person enrolled in a school or other educational institution."@en;
-  rdfs:subClassOf tdh:Person.
+  rdfs:subClassOf :Person.
 
-tdh:firstName a rdfs:Property;
+:firstName a rdfs:Property;
   rdfs:label "First name"@en;
   rdfs:comment "The first name of a person."@en;
-  rdfs:domain tdh:Person;
+  rdfs:domain :Person;
   rdfs:range rdfs:Literal.
 
-tdh:lastName a rdfs:Property;
+:lastName a rdfs:Property;
   rdfs:label "Last name"@en;
   rdfs:comment "The last name of a person."@en;
-  rdfs:domain tdh:Person;
+  rdfs:domain :Person;
   rdfs:range rdfs:Literal.
 
-tdh:Organisation a rdfs:Class.
-tdh:worksFor a rdfs:Property;
+:Organisation a rdfs:Class;
+  rdfs:label "Organisation"@en;
+  rdfs:comment "The Organisation class represents social instititutions such as companies, societies"@en.
+
+:name a rdfs:Property;
+  rdfs:label "Name"@en;
+  rdfs:comment "The name of an organisation."@en;
+  rdfs:domain :Organisation;
+  rdfs:range rdfs:Literal.
+
+:elevatorPitch a rdfs:Property;
+  rdfs:label "Elevator pitch"@en;
+  rdfs:comment "The elevator pitch of a company."@en;
+  rdfs:domain :Organisation;
+  rdfs:range rdfs:Literal.
+
+:worksFor a rdfs:Property;
   rdfs:label "Works for"@en;
   rdfs:comment "Organizations that the person works for."@en;
-  rdfs:domain tdh:Organisation;
+  rdfs:domain :Organisation;
   rdfs:range rdfs:Literal.
+
+:knows a rdfs:Property;
+  rdfs:label "Knows"@en;
+  rdfs:comment "A person known by this person ."@en;
+  rdfs:domain :Person;
+  rdfs:range :Person.
 

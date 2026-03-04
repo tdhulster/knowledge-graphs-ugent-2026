@@ -1,0 +1,20 @@
+@prefix : <#>.
+@prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
+@prefix seppe: <https://github.com/seppesantens/rdf-lab2/blob/main/data.ttl#>.
+@prefix ward: <https://www.tabulas.eu/ward/profile.ttl#>.
+
+:me a tdh:Person, tdh:Student;
+  tdh:firstName "Thijs";
+  tdh:lastName "Dhulster";
+  tdh:worksFor :Athumi;
+  tdh:knows seppe:me, ward:me.
+
+:Athumi a tdh:Organisation;
+  tdh:name "athumi";
+  tdh:elevatorPitch "Athumi helps companies make more data more usable and thus boost the Flemish data economy. As a neutral partner, we facilitate complex challenges in datatech, new data-driven ecosystems and cross-sectoral innovations.".
+
+seppe:me a tdh:Person.
+
+ward:me a tdh:Person.
