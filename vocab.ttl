@@ -1,32 +1,32 @@
-@prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#> .
-@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
+@prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
 
 tdh:Person a rdf:Class;
-           rdfs:label "Person"@en;
-           rdfs:comment "The Person class represents people"@en.
+  rdfs:label "Person"@en;
+  rdfs:comment "The Person class represents people"@en.
 
 tdh:Student a rdf:Class;
-            rdfs:label "Student"@en;
-            rdfs:comment "A person enrolled in a school or other educational institution."@en;
-            rdfs:subClassOf tdh:Person.
+  rdfs:label "Student"@en;
+  rdfs:comment "A person enrolled in a school or other educational institution."@en;
+  rdfs:subClassOf tdh:Person.
 
 tdh:firstName a rdfs:Property;
-              rdfs:label "First name"@en;
-              rdfs:comment "The first name of a person."@en;
-              rdfs:domain tdh:Person;
-              rdfs:range rdfs:Literal.
+  rdfs:label "First name"@en;
+  rdfs:comment "The first name of a person."@en;
+  rdfs:domain tdh:Person;
+  rdfs:range rdfs:Literal.
 
 tdh:lastName a rdfs:Property;
-             rdfs:label "Last name"@en;
-             rdfs:comment "The last name of a person."@en;
-             rdfs:domain tdh:Person;
-             rdfs:range rdfs:Literal.
+  rdfs:label "Last name"@en;
+  rdfs:comment "The last name of a person."@en;
+  rdfs:domain tdh:Person;
+  rdfs:range rdfs:Literal.
 
 tdh:Organisation a rdfs:Class.
-
 tdh:worksFor a rdfs:Property;
-             rdfs:label "Works for"@en;
-             rdfs:comment "Organizations that the person works for."@en;
-             rdfs:domain tdh:Organisation;
-             rdfs:range rdfs:Literal.
+  rdfs:label "Works for"@en;
+  rdfs:comment "Organizations that the person works for."@en;
+  rdfs:domain tdh:Organisation;
+  rdfs:range rdfs:Literal.
+
