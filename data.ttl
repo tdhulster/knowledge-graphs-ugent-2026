@@ -1,0 +1,8 @@
+@prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#> .
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .
+
+
+<#me> a tdh:Student;
+                  tdh:firstName "Thijs";
+                  tdh:lastName "Dhulster".
