@@ -46,8 +46,18 @@
   rdfs:range rdfs:Literal.
 
 :knows a rdfs:Property;
-  rdfs:label "Knows"@en;
-  rdfs:comment "A person known by this person ."@en;
+  rdfs:label "Works for"@en;
+  rdfs:comment "A person known by this person."@en;
   rdfs:domain :Person;
   rdfs:range :Person.
+
+:interestedIn a rdfs:Property;
+  rdfs:label "Interested in"@en;
+  rdfs:comment "A topic which a person is interested in."@en;
+  rdfs:domain :Person;
+  rdfs:range rdfs:Topic.
+
+:Topic a rdf:Class;
+  rdfs:label "Topic"@en;
+  rdfs:comment "The Topic class represents an interest topic."@en.
 

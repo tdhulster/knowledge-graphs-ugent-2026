@@ -9,12 +9,18 @@
   tdh:firstName "Thijs";
   tdh:lastName "Dhulster";
   tdh:worksFor :Athumi;
-  tdh:knows seppe:me, ward:me.
+  tdh:knows seppe:me, ward:me;
+  tdh:interestedIn :SoftwareDevelopment;
+  tdh:interestedIn :KnowledgeGraphs.
 
 :Athumi a tdh:Organisation;
   tdh:name "athumi";
   tdh:elevatorPitch "Athumi helps companies make more data more usable and thus boost the Flemish data economy. As a neutral partner, we facilitate complex challenges in datatech, new data-driven ecosystems and cross-sectoral innovations.".
 
-seppe:me a tdh:Person.
+:SoftwareDevelopment a tdh:Topic.
 
-ward:me a tdh:Person.
+:KnowledgeGraphs a tdh:Topic.  
+
+seppe:me a tdh:Person, tdh:Student.
+
+ward:me a tdh:Person, tdh:Student.
