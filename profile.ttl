@@ -2,6 +2,7 @@
 @prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#>.
 @prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix seppe: <https://seppesantens.github.io/rdf-lab2/data.ttl#>.
 @prefix ward: <https://www.tabulas.eu/ward/profile.ttl#>.
 
@@ -10,6 +11,7 @@
   tdh:lastName "Dhulster";
   tdh:worksFor :Athumi;
   tdh:knows seppe:me, ward:me;
+  foaf:knows seppe:me, ward:me;
   tdh:interestedIn :SoftwareDevelopment;
   tdh:interestedIn :KnowledgeGraphs.
 
@@ -21,6 +23,6 @@
 
 :KnowledgeGraphs a tdh:Topic.  
 
-seppe:me a tdh:Person, tdh:Student.
+seppe:me a tdh:Person, tdh:Student, foaf:Person.
 
-ward:me a tdh:Person, tdh:Student.
+ward:me a tdh:Person, tdh:Student, foaf:Person.
