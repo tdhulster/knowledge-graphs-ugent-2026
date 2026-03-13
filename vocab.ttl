@@ -27,10 +27,10 @@
   rdfs:label "Organisation"@en;
   rdfs:comment "The Organisation class represents social instititutions such as companies, societies"@en.
 
-:name a rdfs:Property;
-  rdfs:label "Name"@en;
-  rdfs:comment "The name of an organisation."@en;
-  rdfs:domain :Organisation;
+:name a rdf:Property;
+  rdfs:label "name"@en;
+  rdfs:comment "The name of a resource"@en;
+  rdfs:domain rdfs:Resource;
   rdfs:range rdfs:Literal.
 
 :elevatorPitch a rdfs:Property;
