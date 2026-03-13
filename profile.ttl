@@ -11,6 +11,7 @@
 
 :me a tdh:Person, tdh:Student;
   tdh:firstName "Thijs";
+  tdh:name "Thijs Dhulster";
   tdh:lastName "Dhulster";
   tdh:worksFor :Athumi;
   tdh:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne;
