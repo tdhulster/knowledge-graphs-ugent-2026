@@ -8,15 +8,15 @@
 @prefix tian: <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#>.
 @prefix jana: <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#>.
 @prefix hanne: <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#>.
-@prefix yajing: <https://pikajojo.github.io/Knowledge_Graph_UGent_Lab2/data.ttl#>
+@prefix yajing: <https://pikajojo.github.io/Knowledge_Graph_UGent_Lab2/data.ttl#>.
 
 :me a tdh:Person, tdh:Student;
   tdh:firstName "Thijs";
   tdh:name "Thijs Dhulster";
   tdh:lastName "Dhulster";
   tdh:worksFor :Athumi;
-  tdh:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne;
-  foaf:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne;
+  tdh:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne, yajing:me;
+  foaf:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne, yajing:me;
   tdh:interestedIn :SoftwareDevelopment;
   tdh:interestedIn :KnowledgeGraphs;
   tdh:enrolledIn :Knowledge-graphs-2025.
