@@ -13,8 +13,8 @@
   tdh:firstName "Thijs";
   tdh:lastName "Dhulster";
   tdh:worksFor :Athumi;
-  tdh:knows seppe:me, ward:me;
-  foaf:knows seppe:me, ward:me;
+  tdh:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne;
+  foaf:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne;
   tdh:interestedIn :SoftwareDevelopment;
   tdh:interestedIn :KnowledgeGraphs;
   tdh:enrolledIn :Knowledge-graphs-2025.
