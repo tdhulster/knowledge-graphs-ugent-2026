@@ -5,6 +5,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix seppe: <https://seppesantens.github.io/rdf-lab2/data.ttl#>.
 @prefix ward: <https://www.tabulas.eu/ward/profile.ttl#>.
+@prefix tian: <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#>.
+@prefix jana: <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#>.
+@prefix hanne: <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#>.
 
 :me a tdh:Person, tdh:Student;
   tdh:firstName "Thijs";
@@ -13,16 +16,31 @@
   tdh:knows seppe:me, ward:me;
   foaf:knows seppe:me, ward:me;
   tdh:interestedIn :SoftwareDevelopment;
-  tdh:interestedIn :KnowledgeGraphs.
+  tdh:interestedIn :KnowledgeGraphs;
+  tdh:enrolledIn :Knowledge-graphs-2025.
 
 :Athumi a tdh:Organisation;
   tdh:name "athumi";
   tdh:elevatorPitch "Athumi helps companies make more data more usable and thus boost the Flemish data economy. As a neutral partner, we facilitate complex challenges in datatech, new data-driven ecosystems and cross-sectoral innovations.".
 
 :SoftwareDevelopment a tdh:Topic.
+:KnowledgeGraphs a tdh:Topic.
+:Knowledge-graphs-2025 a tdh:Course;
+  tdh:name "Knowledge Graphs 2025";
+  tdh:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025>.
 
-:KnowledgeGraphs a tdh:Topic.  
+seppe:me a tdh:Person, tdh:Student, foaf:Person;
+  tdh:enrolledIn :Knowledge-graphs-2025.
 
-seppe:me a tdh:Person, tdh:Student, foaf:Person.
+ward:me a tdh:Person, tdh:Student, foaf:Person;
+  tdh:enrolledIn :Knowledge-graphs-2025.
 
-ward:me a tdh:Person, tdh:Student, foaf:Person.
+tian:me a tdh:Person, tdh:Student, foaf:Person;
+  tdh:enrolledIn :Knowledge-graphs-2025.
+
+jana:me a tdh:Person, tdh:Student, foaf:Person;
+  tdh:enrolledIn :Knowledge-graphs-2025.
+
+hanne:vanoutrive_hanne a tdh:Person, tdh:Student, foaf:Person;
+  tdh:enrolledIn :Knowledge-graphs-2025.
+

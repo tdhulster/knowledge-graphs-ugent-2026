@@ -61,3 +61,19 @@
   rdfs:label "Topic"@en;
   rdfs:comment "The Topic class represents an interest topic."@en.
 
+:Course a rdfs:Class;
+  rdfs:label "Course";
+  rdfs:comment "A course offered at an educational institution.".
+
+:enrolledIn a rdf:Property;
+  rdfs:label "enrolled in";
+  rdfs:comment "Relates a person to a course they are enrolled in.";
+  rdfs:domain :Person;
+  rdfs:range :Course.
+
+:seeAlso a rdf:Property;
+  rdfs:label "see also";
+  rdfs:comment "Relates a resource to another resource that describes the same thing.";
+  rdfs:domain rdfs:Resource;
+  rdfs:range rdfs:Resource.
+
