@@ -8,6 +8,7 @@
 @prefix tian: <https://tiantangvanhoecke.github.io/KG_Lab2/data.ttl#>.
 @prefix jana: <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#>.
 @prefix hanne: <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#>.
+@prefix yajing: <https://pikajojo.github.io/Knowledge_Graph_UGent_Lab2/data.ttl#>
 
 :me a tdh:Person, tdh:Student;
   tdh:firstName "Thijs";
@@ -44,4 +45,8 @@ jana:me a tdh:Person, tdh:Student, foaf:Person;
 
 hanne:vanoutrive_hanne a tdh:Person, tdh:Student, foaf:Person;
   tdh:enrolledIn :Knowledge-graphs-2025.
+
+yajing:me a tdh:Person, tdh:Student, foaf:Person;
+  tdh:enrolledIn :Knowledge-graphs-2025.
+
 
