@@ -9,14 +9,25 @@
 @prefix jana: <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#>.
 @prefix hanne: <https://hannevanoutrive.github.io/knowledge_graphs/data.ttl#>.
 @prefix yajing: <https://pikajojo.github.io/Knowledge_Graph_UGent_Lab2/data.ttl#>.
+@prefix wd: <http://www.wikidata.org/entity/>.
 
 :me a tdh:Person, tdh:Student;
   tdh:firstName "Thijs";
   tdh:name "Thijs Dhulster";
   tdh:lastName "Dhulster";
   tdh:worksFor :Athumi;
-  tdh:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne, yajing:me;
-  foaf:knows seppe:me, ward:me, tian:me, jana:me, hanne:vanoutrive_hanne, yajing:me;
+  tdh:knows seppe:me,
+    ward:me,
+    tian:me,
+    jana:me,
+    hanne:vanoutrive_hanne,
+    yajing:me;
+  foaf:knows seppe:me,
+    ward:me,
+    tian:me,
+    jana:me,
+    hanne:vanoutrive_hanne,
+    yajing:me;
   tdh:interestedIn :SoftwareDevelopment;
   tdh:interestedIn :KnowledgeGraphs;
   tdh:enrolledIn :Knowledge-graphs-2025.
@@ -49,4 +60,41 @@ hanne:vanoutrive_hanne a tdh:Person, tdh:Student, foaf:Person;
 yajing:me a tdh:Person, tdh:Student, foaf:Person;
   tdh:enrolledIn :Knowledge-graphs-2025.
 
+:NiekV a tdh:Person;
+  tdh:name "Niek".
+
+:HannahFalk a tdh:Person;
+  tdh:name "Hannah Falk".
+
+:Tenerife a tdh:Place;
+  tdh:name "Tenerife".
+
+:Ghent a tdh:Place;
+  tdh:name "Ghent".
+
+:UnknowWomenOnABike a tdh:Person.
+:photo-me a tdh:Photo;
+  tdh:title "Thijs on El Teide";
+  tdh:creator :NiekV;
+  tdh:depicts :me;
+  tdh:locationCreated :Tenerife;
+  tdh:description "A photo of Thijs on the top of El Teide in Tenerife";
+  tdh:imageUrl <https://mannennetwerk.org/wp-content/uploads/2025/06/Frame-2085660969.png>.
+
+:photo-sint-niklaaskerk a tdh:Photo;
+  tdh:title "Sint-Niklaaskerk in Ghent";
+  tdh:creator :NiekV;
+  tdh:depicts wd:Q1841314;
+  tdh:locationCreated :Ghent;
+  tdh:description "Sint-Niklaaskerk in Ghent with a beautiful sunset";
+  tdh:imageUrl <https://unsplash.com/photos/an-aerial-view-of-a-city-at-sunset-29lMP-T-nRM>.
+
+:photo-gravensteen a tdh:Photo;
+  tdh:title "Gravensteen in Ghent";
+  tdh:creator :NiekV;
+  tdh:depicts wd:Q1543972;
+  tdh:depicts :UnknowWomenOnABike;
+  tdh:locationCreated :Ghent;
+  tdh:description "Picture of Gravensteen castle in Ghent and a women on a bike";
+  tdh:imageUrl <https://unsplash.com/photos/a-person-riding-a-bike-in-front-of-a-castle-drXLZbqCJb8>.
 

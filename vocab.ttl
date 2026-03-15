@@ -1,6 +1,7 @@
 @prefix : <#>.
 @prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 :Person a rdf:Class;
   rdfs:label "Person"@en;
@@ -75,5 +76,44 @@
   rdfs:label "see also";
   rdfs:comment "Relates a resource to another resource that describes the same thing.";
   rdfs:domain rdfs:Resource;
+  rdfs:range rdfs:Resource.
+
+:Photo a rdf:Class;
+  rdfs:label "Photo"@en;
+  rdfs:comment "A photo"@en;
+  rdfs:subClassOf foaf:Image.
+
+:Place a rdf:Class;
+  rdfs:label "Place"@en;
+  rdfs:comment "A physical location"@en.
+
+:creator a rdf:Property;
+  rdfs:label "title";
+  rdfs:comment "The title of the item.";
+  rdfs:domain :Photo;
+  rdfs:range rdfs:Resource.
+
+:depicts a rdf:Property;
+  rdfs:label "depicts";
+  rdfs:comment "A thing depicted in this representation.";
+  rdfs:domain :Photo;
+  rdfs:range rdfs:Resource.
+
+:locationCreated a rdf:Property;
+  rdfs:label "title";
+  rdfs:comment "The title of the item.";
+  rdfs:domain :Photo;
+  rdfs:range :Place.
+
+:description a rdf:Property;
+  rdfs:label "title";
+  rdfs:comment "The title of the item.";
+  rdfs:domain :Photo;
+  rdfs:range rdfs:Resource.
+
+:imageUrl a rdf:Property;
+  rdfs:label "image URL";
+  rdfs:comment "URL pointing to the image";
+  rdfs:domain :Photo;
   rdfs:range rdfs:Resource.
 
