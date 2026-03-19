@@ -1,5 +1,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+{?P rdfs:domain ?C. ?X ?P ?Y} => {?X a ?C}.
+{?P rdfs:range ?C. ?X ?P ?Y} => {?Y a ?C}.
+
 {?C rdfs:subClassOf ?D. ?X a ?C} => {?X a ?D}.
 {?C rdfs:subClassOf ?D. ?D rdfs:subClassOf ?E} => {?C rdfs:subClassOf ?E}.
 {?C rdfs:subClassOf ?D. ?P rdfs:domain ?C} => {?P rdfs:domain ?D}.
