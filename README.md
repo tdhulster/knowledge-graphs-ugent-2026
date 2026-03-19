@@ -2,3 +2,4 @@
 
 - [profile](./profile.ttl)
 - [vocabulary](vocab.ttl)
+- [rules](rules.n3)
