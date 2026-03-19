@@ -1,11 +1,12 @@
-@prefix : <#>.
-@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
 :Person a rdf:Class;
   rdfs:label "Person"@en;
-  rdfs:comment "The Person class represents people"@en.
+  rdfs:comment "The Person class represents people"@en;
+  rdfs:subClassOf foaf:Person.
 
 :Student a rdf:Class;
   rdfs:label "Student"@en;
@@ -32,7 +33,8 @@
   rdfs:label "name"@en;
   rdfs:comment "The name of a resource"@en;
   rdfs:domain rdfs:Resource;
-  rdfs:range rdfs:Literal.
+  rdfs:range rdfs:Literal;
+  rdfs:subPropertyOf foaf:name.
 
 :elevatorPitch a rdfs:Property;
   rdfs:label "Elevator pitch"@en;
@@ -97,7 +99,8 @@
   rdfs:label "depicts";
   rdfs:comment "A thing depicted in this representation.";
   rdfs:domain :Photo;
-  rdfs:range rdfs:Resource.
+  rdfs:range rdfs:Resource;
+  rdfs:subPropertyOf foaf:depicts.
 
 :locationCreated a rdf:Property;
   rdfs:label "title";

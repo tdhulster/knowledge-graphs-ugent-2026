@@ -1,7 +1,7 @@
-@prefix : <#>.
+@prefix : <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#>.
 @prefix tdh: <https://tdhulster.github.io/knowledge-graphs-ugent-2026/vocab.ttl#>.
-@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix seppe: <https://seppesantens.github.io/rdf-lab2/data.ttl#>.
 @prefix ward: <https://www.tabulas.eu/ward/profile.ttl#>.
@@ -72,7 +72,9 @@ yajing:me a tdh:Person, tdh:Student, foaf:Person;
 :Ghent a tdh:Place;
   tdh:name "Ghent".
 
-:UnknowWomenOnABike a tdh:Person.
+:UnknowWomanOnABike a tdh:Person;
+  tdh:name "The woman on the bike".
+
 :photo-me a tdh:Photo;
   tdh:title "Thijs on El Teide";
   tdh:creator :NiekV;
@@ -83,7 +85,7 @@ yajing:me a tdh:Person, tdh:Student, foaf:Person;
 
 :photo-sint-niklaaskerk a tdh:Photo;
   tdh:title "Sint-Niklaaskerk in Ghent";
-  tdh:creator :NiekV;
+  tdh:creator :HannahFalk;
   tdh:depicts wd:Q1841314;
   tdh:locationCreated :Ghent;
   tdh:description "Sint-Niklaaskerk in Ghent with a beautiful sunset";
@@ -93,7 +95,7 @@ yajing:me a tdh:Person, tdh:Student, foaf:Person;
   tdh:title "Gravensteen in Ghent";
   tdh:creator :NiekV;
   tdh:depicts wd:Q1543972;
-  tdh:depicts :UnknowWomenOnABike;
+  tdh:depicts :UnknowWomanOnABike;
   tdh:locationCreated :Ghent;
   tdh:description "Picture of Gravensteen castle in Ghent and a women on a bike";
   tdh:imageUrl <https://unsplash.com/photos/a-person-riding-a-bike-in-front-of-a-castle-drXLZbqCJb8>.
